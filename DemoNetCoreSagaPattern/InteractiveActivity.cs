@@ -10,25 +10,17 @@ namespace DemoNetCoreSagaPattern
     {
         public ActivityStatus InteractiveExecute(string activityName)
         {
-            ActivityStatus status;
+            var status = ActivityStatus.Failed;
             Console.WriteLine($"\nActivity {activityName} executing ...");
             Console.Write("Enter Return Status (Y=Succeeded, N=Failed)? ");
             var reply = Console.ReadLine();
             if (reply != null)
             {
-                reply = reply.Trim().ToLower();
+                reply = reply.Trim().ToUpper();
                 if (reply == "y" || reply == "yes")
                 {
                     status = ActivityStatus.Succeeded;
                 }
-                else
-                {
-                    status = ActivityStatus.Failed;
-                }
-            }
-            else
-            {
-                status = ActivityStatus.Failed;
             }
             if (status == ActivityStatus.Succeeded)
             {
@@ -42,25 +34,17 @@ namespace DemoNetCoreSagaPattern
         }
         public ActivityStatus InteractiveCompensate(string activityName)
         {
-            ActivityStatus status;
+            var status = ActivityStatus.Failed;
             Console.WriteLine($"\nActivity {activityName} compensating ...");
             Console.Write("Enter Return Status (Y=Succeeded, N=Failed)? ");
             var reply = Console.ReadLine();
             if (reply != null)
             {
-                reply = reply.Trim().ToLower();
+                reply = reply.Trim().ToUpper();
                 if (reply == "y" || reply == "yes")
                 {
                     status = ActivityStatus.Succeeded;
                 }
-                else
-                {
-                    status = ActivityStatus.Failed;
-                }
-            }
-            else
-            {
-                status = ActivityStatus.Failed;
             }
             if (status == ActivityStatus.Succeeded)
             {

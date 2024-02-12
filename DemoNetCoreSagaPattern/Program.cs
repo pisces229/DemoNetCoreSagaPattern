@@ -6,7 +6,7 @@ var activity1 = new Activity1();
 var activity2 = new Activity2();
 var activity3 = new Activity3();
 
-Saga saga = new Saga();
+var saga = new Saga();
 saga.GetActivities().Add(activity1);
 saga.GetActivities().Add(activity2);
 saga.GetActivities().Add(activity3);

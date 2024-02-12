@@ -36,7 +36,6 @@ namespace DemoNetCoreSagaPattern
             for (Context.CurrentActivity = 0; Context.CurrentActivity < Context.Activities!.Count; Context.CurrentActivity++)
             {
                 Context.LastActivity = Context.CurrentActivity;
-
                 var activity = Context.Activities[Context.CurrentActivity];
                 try
                 {
