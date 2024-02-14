@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoNetCoreSagaPattern
+namespace Orchestration
 {
-    public enum ActivityStatus
+    public interface IService
     {
-        Succeeded,
-        Failed
+        void Run(SagaModel sagaModel);
     }
 }

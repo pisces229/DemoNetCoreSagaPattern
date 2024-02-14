@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoNetCoreSagaPattern
+namespace Choreography
 {
     public enum SagaStatus
     {
-        NotStarted,
-        Running,
-        Succeeded,
-        Failed,
-        UnexpectedError
+        Wait,
+        Process,
+        Success,
+        Fail,
     }
 }

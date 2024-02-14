@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoNetCoreSagaPattern
+namespace Simple
 {
     public class InteractiveActivity
     {
         public ActivityStatus InteractiveExecute(string activityName)
         {
             var status = ActivityStatus.Failed;
-            Console.WriteLine($"\nActivity {activityName} executing ...");
+            Console.WriteLine();
+            Console.WriteLine($"Activity {activityName} executing ...");
             Console.Write("Enter Return Status (Y=Succeeded, N=Failed)? ");
             var reply = Console.ReadLine();
             if (reply != null)
             {
-                reply = reply.Trim().ToUpper();
-                if (reply == "y" || reply == "yes")
+                if ("Y".Equals(reply.Trim().ToUpper()))
                 {
                     status = ActivityStatus.Succeeded;
                 }
@@ -35,13 +35,13 @@ namespace DemoNetCoreSagaPattern
         public ActivityStatus InteractiveCompensate(string activityName)
         {
             var status = ActivityStatus.Failed;
-            Console.WriteLine($"\nActivity {activityName} compensating ...");
+            Console.WriteLine();
+            Console.WriteLine($"Activity {activityName} compensating ...");
             Console.Write("Enter Return Status (Y=Succeeded, N=Failed)? ");
             var reply = Console.ReadLine();
             if (reply != null)
             {
-                reply = reply.Trim().ToUpper();
-                if (reply == "y" || reply == "yes")
+                if ("Y".Equals(reply.Trim().ToUpper()))
                 {
                     status = ActivityStatus.Succeeded;
                 }

@@ -1,4 +1,4 @@
-﻿using DemoNetCoreSagaPattern;
+﻿using Simple;
 
 Console.WriteLine("Saga Pattern Test!");
 

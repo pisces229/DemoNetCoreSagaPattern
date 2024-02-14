@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCoreSagaPattern", "DemoNetCoreSagaPattern\DemoNetCoreSagaPattern.csproj", "{57AB43DF-552F-4C6F-8422-9590AFB5B6A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Choreography", "Choreography\Choreography.csproj", "{C1249762-B962-48EF-941F-34EE9EC63983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestration", "Orchestration\Orchestration.csproj", "{AEC49364-A929-4890-8E67-7D46ADC73CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple", "Simple\Simple.csproj", "{A57027BC-D51B-477C-A410-E47FCE4E3160}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57AB43DF-552F-4C6F-8422-9590AFB5B6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57AB43DF-552F-4C6F-8422-9590AFB5B6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57AB43DF-552F-4C6F-8422-9590AFB5B6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57AB43DF-552F-4C6F-8422-9590AFB5B6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1249762-B962-48EF-941F-34EE9EC63983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1249762-B962-48EF-941F-34EE9EC63983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1249762-B962-48EF-941F-34EE9EC63983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1249762-B962-48EF-941F-34EE9EC63983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC49364-A929-4890-8E67-7D46ADC73CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC49364-A929-4890-8E67-7D46ADC73CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC49364-A929-4890-8E67-7D46ADC73CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC49364-A929-4890-8E67-7D46ADC73CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A57027BC-D51B-477C-A410-E47FCE4E3160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A57027BC-D51B-477C-A410-E47FCE4E3160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A57027BC-D51B-477C-A410-E47FCE4E3160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A57027BC-D51B-477C-A410-E47FCE4E3160}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
